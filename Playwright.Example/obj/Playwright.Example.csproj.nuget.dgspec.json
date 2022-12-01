@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\tdv_testwebapps\\Playwright.Example\\Playwright.Example.csproj": {}
+    "C:\\dev\\PlaywrightNunitExample\\Playwright.Example\\Playwright.Example.csproj": {}
   },
   "projects": {
-    "C:\\dev\\tdv_testwebapps\\Playwright.Example\\Playwright.Example.csproj": {
+    "C:\\dev\\PlaywrightNunitExample\\Playwright.Example\\Playwright.Example.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\tdv_testwebapps\\Playwright.Example\\Playwright.Example.csproj",
+        "projectUniqueName": "C:\\dev\\PlaywrightNunitExample\\Playwright.Example\\Playwright.Example.csproj",
         "projectName": "Playwright.Example",
-        "projectPath": "C:\\dev\\tdv_testwebapps\\Playwright.Example\\Playwright.Example.csproj",
+        "projectPath": "C:\\dev\\PlaywrightNunitExample\\Playwright.Example\\Playwright.Example.csproj",
         "packagesPath": "C:\\Users\\andrewsl\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\tdv_testwebapps\\Playwright.Example\\obj\\",
+        "outputPath": "C:\\dev\\PlaywrightNunitExample\\Playwright.Example\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
