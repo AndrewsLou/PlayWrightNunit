@@ -1,0 +1,68 @@
+﻿@model HomeFormViewModel
+@{
+    ViewData["Title"] = "Contact us.";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p>If you want to be contacted, please, submit your information</p>
+</div>
+
+@using(Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-3">
+            @Html.LabelFor(x => x.Form.FirstName)
+        </div>
+        <div class="col-5">
+            @Html.TextBoxFor(x => x.Form.FirstName, new {@class="form-control"})
+        </div>
+        <div class="col-3">
+            @Html.ValidationMessageFor(x => x.Form.FirstName)
+        </div>
+    </div><br />
+    <div class="row">
+        <div class="col-3">
+            @Html.LabelFor(x => x.Form.LastName)
+        </div>
+        <div class="col-5">
+            @Html.TextBoxFor(x => x.Form.LastName, new {@class="form-control"})
+        </div>
+        <div class="col-3">
+            @Html.ValidationMessageFor(x => x.Form.LastName)
+        </div>
+    </div>
+     <br />
+    <div class="row">
+        <div class="col-3">
+            @Html.LabelFor(x => x.Form.EmailAddress)
+        </div>
+        <div class="col-5">
+            @Html.TextBoxFor(x => x.Form.EmailAddress, new {@class="form-control"})
+        </div>
+        <div class="col-3">
+            @Html.ValidationMessageFor(x => x.Form.EmailAddress)
+        </div>
+    </div>
+     <br />
+    <div class="row">
+        <div class="col-3">
+            @Html.LabelFor(x => x.Form.BirthDate)
+        </div>
+        <div class="col-5">
+            @Html.TextBoxFor(x => x.Form.BirthDate, new {@class="form-control", @type="date"})
+        </div>
+        <div class="col-3">
+            @Html.ValidationMessageFor(x => x.Form.BirthDate)
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-3">
+            <p></p>
+        </div>
+        <div class="col-5">
+            <input type="submit" value="Send" class="btn btn-primary" />
+        </div>
+    </div>
+}
