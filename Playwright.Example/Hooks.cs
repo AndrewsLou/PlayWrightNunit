@@ -7,16 +7,19 @@ namespace Playwright.Example
 {
     public class Hooks : PageTest 
     {
-        public static string webAppUrl;
-
         public IPlaywright? PlaywrightContext { get; private set; }
-        public IBrowser? Browser { get; private set; }
+        public IBrowser? browser { get; private set; }
+        public IPage? page { get; private set; }
 
         [SetUp]
         public async Task Init()
         {
-            webAppUrl = TestContext.Parameters["WebAppUrl"]
-                ?? throw new Exception("WebAppUrl is not configured.");
+            browser = await Playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
+            {
+                Headless = true
+            });
+
+            page = await browser.NewPageAsync();
             var properties = TestContext.CurrentContext.Test.Properties;
 
             if (properties.ContainsKey("Category") &&
