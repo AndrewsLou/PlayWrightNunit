@@ -4,6 +4,8 @@ using System.Text.RegularExpressions;
 
 namespace Playwright.Example.Tests
 {
+    [Parallelizable(ParallelScope.Self)]
+    [TestFixture]
     public class WebAppTests : Hooks
     {
         [Category("TraceIt")]

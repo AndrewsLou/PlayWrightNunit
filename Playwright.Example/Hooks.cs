@@ -1,6 +1,7 @@
 ﻿using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
 using NUnit.Framework;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 namespace Playwright.Example
@@ -34,6 +35,14 @@ namespace Playwright.Example
                         Name = TestContext.CurrentContext.Test.FullName
                     });
             }
+
+            var startInfo = new ProcessStartInfo()
+            {
+                FileName = "powershell.exe",
+                Arguments = @";.\RunWebApp.ps1",
+                UseShellExecute = false
+            };
+            Process.Start(startInfo);
         }
 
         [TearDown]

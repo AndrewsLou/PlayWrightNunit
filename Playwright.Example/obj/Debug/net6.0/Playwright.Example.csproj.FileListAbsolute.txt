@@ -778,3 +778,4 @@ C:\dev\PlaywrightNunitExample\Playwright.Example\obj\Debug\net6.0\refint\Playwri
 C:\dev\PlaywrightNunitExample\Playwright.Example\obj\Debug\net6.0\Playwright.Example.pdb
 C:\dev\PlaywrightNunitExample\Playwright.Example\obj\Debug\net6.0\Playwright.Example.genruntimeconfig.cache
 C:\dev\PlaywrightNunitExample\Playwright.Example\obj\Debug\net6.0\ref\Playwright.Example.dll
+C:\dev\PlaywrightNunitExample\Playwright.Example\bin\Debug\net6.0\RunWebApp.ps1
